@@ -50,7 +50,7 @@ h3 {
   color: #1e1e1e;
 }
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "BasisGrotesk";
   min-width: 150px;
   color: #474747;
@@ -122,7 +122,10 @@ a{
 }
 #linkedin-icon{
   width: 18px;
-  height:fit-content
+  height:fit-content;
+}
+#linkedin-icon:hover, #arrow:hover{
+  opacity: 50%;
 }
 text {
   font-size: 18px;
@@ -154,7 +157,7 @@ text {
   display: flex;
   gap: 5%;
   padding-top: 5vh;
-  padding-bottom: 15vh;
+  padding-bottom: 7vh;
 }
 #bio-cont{
   /* position: absolute;  */
@@ -163,7 +166,7 @@ text {
   margin-right: 10%;
 }
 #me-sketch{
-  width: 30vh;
+  width: 35vh;
   /* top: 35vh; 
   left: 30vh; */
   /* position:absolute; */

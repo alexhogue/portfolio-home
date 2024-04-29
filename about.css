@@ -94,6 +94,9 @@ a{
   color: inherit;
   text-decoration: none;
 }
+#link:hover{
+  color: #8a8a8a;
+}
 #nav-bar-text{
   display: flex;
   justify-content: space-between;
@@ -126,4 +129,5 @@ text {
 }
 #me{
     width: 40%;
+    border-radius: 10px;
 }
