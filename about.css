@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "BasisGrotesk";
+  src: url("typefaces/BasisGrotesquePro-Light 2.otf");
+}
+@font-face {
+  font-family: "GT";
+  src: url("typefaces/GT-Walsheim-Pro-Light.otf");
+}
+@font-face {
+  font-family: "GT-reg";
+  src: url("typefaces/GT-Walsheim-Pro-Regular.otf");
+}
+@font-face {
+  font-family: "GT-med";
+  src: url("typefaces/GT-Walsheim-Pro-Medium.otf");
+}
+@font-face {
+  font-family: "MonumentGrotesk";
+  src: url("typefaces/monument-grotesk-regular.otf");
+}
+@font-face {
+  font-family: "GoodSans";
+  src: url("typefaces/GoodSans-Thin.otf");
+}
+@font-face {
+  font-family: "Plaak";
+  src: url("typefaces/Plaak-25Light.otf");
+}
+
+#website {
+  display: flex;
+  flex-direction: column;
+}
+html, body{
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 44px;
+  font-family: "GT";
+}
+h2 {
+  font-size: 20px;
+  font-family: "GoodSans";
+  color: #474747;
+}
+h3 {
+  font-size: 28px;
+  font-family: "GT-med";
+  min-width: 150px;
+  color: #1e1e1e;
+}
+h4 {
+  font-size: 18px;
+  font-family: "BasisGrotesk";
+  min-width: 150px;
+  color: #474747;
+}
+h5 {
+  font-size: 20px;
+  font-family: "MonumentGrotesk";
+}
+label, button{
+  font-size: 14px;
+  font-family: "BasisGrotesk";
+  line-height: 24px;
+}
+p,
+li,
+th, button {
+  font-size: 18px;
+  font-family: "BasisGrotesk";
+  line-height: 30px;
+}
+hr{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+#titleArea {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /* margin-bottom: 8%; */
+}
+.section {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 4%;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+#nav-bar-text{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+#nav-buttons{
+  display: flex;
+  gap: 100px;
+  /* margin-right: 10%; */
+  justify-content: space-evenly;
+}
+#linkedin-icon{
+  width: 18px;
+  height:fit-content
+}
+text {
+  font-size: 18px;
+  font-family: "GT";
+}
+#name:hover {
+  filter: drop-shadow(3px 3px 3px #54b3d6);
+  color: rgb(78, 120, 165);
+}
+#main-sec{
+    display: flex;
+    gap: 8%;
+}
+#me{
+    width: 40%;
+}

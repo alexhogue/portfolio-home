@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Home</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body id="website">
+    <div id="nav-bar">
+      <div id="nav-bar-text">
+        <text class="nav-button"><a href="home.html">Alex(andra) Hogue</a></text>
+        <div id="nav-buttons">
+          <text class="nav-button"><a id="work-nav" href="#selected">Work</a></text>
+          <text class="nav-button"><a>Art</a></text>
+          <text class="nav-button"><a href="about.html">About</a></text>
+          <a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div id="title-cont">
+      <div id="titleArea">
+        
+        
+        <div id="star" >
+          <!-- <svg width="120" height="150" viewBox="0 0 141 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100.637 75.8717C107.971 80.3625 117.131 83.5548 128.565 84.8538C119.15 85.6009 108.01 87.9255 98.0806 95.1584C85.3922 104.401 74.7775 121.58 72.1332 153.418C71.4264 141.737 69.3593 128.618 63.3179 117.081C58.7778 108.41 51.9935 100.631 41.8672 95.0235C34.2246 90.7915 24.6951 87.806 12.8176 86.5973C23.031 85.7649 34.9032 83.2273 45.359 75.5276C58.4197 65.9096 69.1771 48.3146 71.8573 16.2223C72.5321 27.6521 74.4812 40.8584 80.1113 52.6529C84.4268 61.6935 90.9086 69.9146 100.637 75.8717Z" stroke="#B1A491"/>
+          </svg> -->
+        </div>
+        <!-- <svg id="title-curve" width="1048" height="467" viewBox="0 0 1048 467" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path id="curve" d="M0.5 0.5C197 0.5 393.1 50.6 521.5 199C682 384.5 856 466 1047.5 466" stroke="none"/>
+          <text class="text" id="title" draggable="true">
+            <textpath xlink:href="#curve" startOffset="50%">
+              Hello– I'm Alex(andra) Hogue!
+            </textpath>
+          </text>
+          <text id="title">Hello- I'm Alex(andra) Hogue</text>
+        </svg> -->
+        <text id="title">Hello- I'm <span id="name">Alex(andra) Hogue</span>!</text>
+        <div id="main-sec">
+          <div id="sketch-cont">
+            <img id="me-sketch" src="assets/me-sketch.png">
+          </div>
+          <div id="bio-cont">
+            <p>I’m a Designer at the intersection of visual communication, technology, and cognitive science 
+              focused on accessibility and inclusion. I work to make people and their needs seen!</p>
+            <p>I’m a third-year Brown|RISD Dual-Degree student studying Computer Science and Illustration.</p>
+            <a href="about.html">
+              <div id="more">
+                  <h4 id="aboutMe">More about me</h4>
+                  <img id="arrow" src="assets/arrow.png"/>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="selected" class="section">
+        <h2>Selected Works:</h2>
+      </div>
+
+      <!-- <div id="study">
+        <p>I’m a third-year Brown|RISD Dual-Degree student studying Computer Science and Illustration.</p>
+      </div> -->
+      <!-- <h3 id="aboutMe">More about me -></h3> -->
+    </div>
+    <div>
+      <hr>
+      <div class="work-cont">
+        <a href="warp.html">
+          <div class="work">
+            <h1 class="number">1.</h1>
+            <div class="work-content">
+              <video loop autoplay muted id="warp-vid">
+                <source src="assets/warp/highfi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <!-- <img id="warp" src="assets/warp.png"/> -->
+              <div class="work-desc">
+                <h3 class="project-title">Warp Home</h3>
+                <label>Product design | industry project | collaboration</label>
+              </div>
+            </div>
+          </div>
+        </a>
+        <hr class="work-divider">
+      </div>
+        <div class="work-cont">
+          <a href="voyage-vault.html">
+            <div class="work">
+              <h1 class="number">2.</h1>
+              <div class="work-content">
+                <img id="voyage-gif" alt="user interacting with the interface" src="assets/interface.gif"/>
+                <div class="work-desc">
+                  <h3 class="project-title">Voyage Vault</h3>
+                  <p>A travel app prototype for creating your travel bucket list</p>
+                  <label>UI/UX design | front-end development</label>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </a>
+        <hr class="work-divider">
+      </div>
+      <div class="work-cont">
+        <div class="work">
+          <h1 class="number">3.</h1>
+          <div class="work-content">
+            <div class="work-desc">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <hr class="work-divider"> -->
+    </div>
+    <div id="footer">
+      <p>Alexandra Hogue</p>
+    </div>
+    <script>
+      const titleArea = document.getElementById("title-cont");
+
+      function spark(event){
+
+        let i = document.createElement("i");
+        i.style.left = (event.pageX) + "px";
+        i.style.top = (event.pageY) + "px";
+        i.style.scale = `${Math.random()*2+1}`;
+        i.style.setProperty('--random-color', getRandomColor());
+        i.style.setProperty(`--x`, getRandomTransitionVal());
+        i.style.setProperty(`--y`, getRandomTransitionVal());
+
+        document.body.appendChild(i);
+
+        setTimeout(() => {
+          document.body.removeChild(i);
+        }, 800)
+      }
+
+      function getRandomTransitionVal() {
+        return `${Math.random()*200-100}px`;
+      }
+
+      function getRandomColor() {
+        const red = Math.floor(Math.random() + 250); // Random integer between 0 and 255
+        const green = Math.floor(Math.random() + 120);
+        const blue = Math.floor(Math.random() * 200);
+        const color = `rgb(${red}, ${green}, ${blue})`;
+        return color;
+      }
+
+      titleArea.addEventListener("mousemove", spark);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  </body>
+  <script src="script.js"></script>
+</html>
