@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "GT-reg";
+  src: url("typefaces/GT-Walsheim-Pro-Regular.otf");
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
+p,
+li,
+th, button {
+  font-size: 18px;
+  font-family: "BasisGrotesk";
+  line-height: 30px;
+}
+.important {
+    font-family: "GT-reg";
+    font-weight: bold;
+}
+.link {
+  color: inherit;
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+.link:hover {
+  color: #e7436d;
+  /* text-decoration: underline; */
+}
+#titleArea{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  
+}

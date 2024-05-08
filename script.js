@@ -1,4 +1,4 @@
-const star = document.getElementById("star");
+// const star = document.getElementById("cloud");
 let newX = 0, newY = 0, startX = 100, startY = 100;
 let offsetX = 0,
   offsetY = 0;
@@ -36,4 +36,12 @@ function mouseMove(e){
 function mouseUp(e) {
   isDragging = false;
   document.removeEventListener("mousemove", mouseMove)
+}
+
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle("open");
+  document.getElementById("nav-bar").classList.toggle("expanded");
+
+
 }

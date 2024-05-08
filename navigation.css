@@ -1,0 +1,127 @@
+*{
+  /* padding: 0;  
+  margin: 0; */
+  box-sizing: border-box;
+}
+#nav-bar{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0vh;
+    z-index: 1000;
+}
+
+#nav-bar.expanded {
+  height: 30vh; /* Adjust this value to the desired height when the menu is open */
+  border-bottom: 1px solid black;
+}
+#nav-bar-text{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#nav-buttons{
+  display: flex;
+  gap: 100px;
+  /* margin-right: 10%; */
+  justify-content: space-evenly;
+}
+.nav-button:hover, .project-title:hover {
+  color: #8a8a8a;
+}
+#linkedin-icon{
+  width: 18px;
+  height:fit-content;
+}
+#linkedin-icon:hover {
+  opacity: 50%;
+}
+text {
+  font-size: 18px;
+  font-family: "GT";
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+#link:hover{
+  color: #8a8a8a;
+}
+#main-menu, .mobile-menu {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap:25px;
+  justify-content: space-around;
+}
+#main-menu li {
+    padding: 5px;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+hr{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+#menu-icon{
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#menu-icon div{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(34, 34, 34);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -4px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top:40px;
+    left:0;
+    /* z-index: 10px; */
+    height:calc(100vh - 40px);
+    width: 85vw;
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 700px) {
+  #main-menu{
+    display:none;
+  }
+  #menu-icon{
+    display:block;
+  }
+
+
+}

@@ -36,23 +36,24 @@ html, body{
 }
 h1 {
   font-size: 44px;
-  font-family: "GT";
+  font-family: "GT-med";
 }
 h2 {
-  font-size: 20px;
-  font-family: "GoodSans";
+  font-size: 26px;
+  font-family: "GT-med";
   color: #474747;
 }
 h3 {
-  font-size: 28px;
-  font-family: "GT-med";
+  font-size: 22px;
+  font-family: "Plaak";
   min-width: 150px;
-  color: #1e1e1e;
+  color: #474747;
 }
 h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "BasisGrotesk";
   min-width: 150px;
+  line-height: 30px;
   color: #474747;
 }
 h5 {
@@ -75,8 +76,13 @@ hr{
   margin-top: 0em;
   margin-bottom: 0em;
 }
+.highlighted{
+    font-weight: 900;
+    font-family: "MonumentGrotesk";
+    /* color: #87004d; */
+}
 
-#titleArea {
+#about-area {
   display: flex;
   flex-direction: column;
   margin-left: 15%;
@@ -90,34 +96,14 @@ hr{
   margin-right: 8%;
   margin-top: 4%;
 }
-a{
+#link{
   color: inherit;
   text-decoration: none;
+  border-bottom: 1px dotted #000;
 }
 #link:hover{
   color: #8a8a8a;
-}
-#nav-bar-text{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5px;
-  margin-bottom: 8px;
-}
-#nav-buttons{
-  display: flex;
-  gap: 100px;
-  /* margin-right: 10%; */
-  justify-content: space-evenly;
-}
-#linkedin-icon{
-  width: 18px;
-  height:fit-content
-}
-text {
-  font-size: 18px;
-  font-family: "GT";
+  font-weight: 800;
 }
 #name:hover {
   filter: drop-shadow(3px 3px 3px #54b3d6);
@@ -129,5 +115,68 @@ text {
 }
 #me{
     width: 40%;
+    height: fit-content;
     border-radius: 10px;
+}
+#picture-section{
+    display: flex;
+    align-items: center;
+}
+.hover-text {
+  visibility: hidden;
+  font-family: "GT";
+  width: 125px;
+  background-color: rgb(255, 255, 255);
+  border: 1px dashed rgb(146, 146, 146);
+  /* color of the tooltip text */
+  color: #222222;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.hover:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+  
+}
+.hover{
+    width: 20%;
+}
+.picture{
+    width: 100%;
+    height: fit-content;
+}
+i {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--random-color);
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+}
+@keyframes animate {
+  0%
+  {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  100%
+  {
+    opacity: 0;
+    transform: translate(var(--x), var(--y));
+  }
+}
+
+@media screen and (max-width: 768px) {
+ #main-sec{
+    flex-direction: column;
+    align-items: center;
+ }
+ #me{
+    min-width: 225px;
+ }
 }

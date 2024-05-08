@@ -4,42 +4,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="mouse.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body id="website">
     <div id="nav-bar">
       <div id="nav-bar-text">
-        <text><a href="home.html">Alex(andra) Hogue</a></text>
+        <text class="nav-button"><a href="home.html">Alex(andra) Hogue</a></text>
         <div id="nav-buttons">
-          <text><a id="work-nav" href="#selected">Work</a></text>
-          <text>Art</text>
-          <text>About</text>
+          <text class="nav-button"><a id="work-nav" href="home.html#selected">Work</a></text>
+          <text class="nav-button"><a href="art.html">Art</a></text>
+          <text class="nav-button"><a href="about.html">About</a></text>
           <a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a>
         </div>
       </div>
       <hr>
     </div>
-    <div id="titleArea">
-        <h1>A Little About <span id="name">Me</span></h1>
-        <div id="main-sec">
-            <img id="me" src="assets/me.JPG">
-            <div id="writing">
-                <p>Hello! Thank you for checking out my portfolio:)</p>
-                <p>I'm a digital product designer with a focus on cognitive science and accessibility. I enjoy helping 
-                    people feel seen through my work. I've previously worked as a Medical Illustration intern at UNC Hospital
-                    where I worked to create visual communication tools for Neurosurgeons that effectively captured complex
-                    medical topics. 
-                </p>
-                <p>I am currently a dual-degree student majoring in Computer Science at Brown and Illustration at the 
-                    Rhode Island School of Design, and I love exloring ways to merge these interests in my work.
-                </p>
-                <p>I'm from North Carolina, and I love to read, travel, and try vanilla lattes at every cafe I find!</p>
+    <div id=about-page>
+        <div id="about-area">
+            <h1>A Little About <span id="name">Me</span></h1>
+            <div id="main-sec">
+                <img id="me" src="assets/me.JPG">
+                <div id="writing">
+                    <h4>Hello! Thank you for checking out my portfolio:)</h4>
+                    <p>I'm a digital product designer with a focus on <span class="highlighted">cognitive science</span> and <span class="highlighted">accessibility</span>. 
+                        I want to help people feel seen through my work. I've previously worked as a Medical Illustration 
+                        intern at UNC Hospital where I worked to create visual communication tools for Neurosurgeons that 
+                        effectively captured complex medical topics. 
+                    </p>
+                    <p>I am currently a <span class="highlighted">Brown|RISD dual-degree student</span> majoring in Computer Science at Brown and Illustration at the 
+                        Rhode Island School of Design, and I love exloring ways to merge these interests in my work.
+                    </p>
+                    <p>Feel free to reach out or connect with me on <a id="link" href="https://www.linkedin.com/in/alex-hogue/" target="_blank">LinkedIn</a>!</p>
+                </div>
             </div>
         </div>
-        <p>Feel free to reach out or connect with me on <a id="link" href="https://www.linkedin.com/in/alex-hogue/" target="_blank">LinkedIn</a>.</p>
+        <div id="picture-section" class="section">
+            <div class="hover"> 
+                <span class="hover-text">I'm from North Carolina (go UNC)</span>
+                <img id="picture1" class="picture" src="assets/nc.png"/>
+            </div>
+            <div class="hover">
+                <span class="hover-text">I love to read (especially long fantasy books and gothic lit)</span>
+                <img id="picture2" class="picture" src="assets/books.png"/>
+            </div>
+            <div class="hover">
+                <span class="hover-text">I love traveling and experiencing new places</span>
+                <img id="picture3" class="picture" src="assets/globe.png"/>
+            </div>
+            <div class="hover">
+                <span class="hover-text">I love trying vanilla lattes at every cafe I find</span>
+                <img id="picture4" class="picture" src="assets/latte.png"/>
+            </div>
+            <div class="hover">
+                <span class="hover-text">I enjoy ice skating and was a competitive synchronized figure skater for 10 years</span>
+                <img id="picture5" class="picture" src="assets/skates.png"/>
+            </div>
+        </div>
     </div>
-    <div class="section">
-    
+    <div id="footer">
+      <hr>
+      <div id="footer-text">
+        <div id="spacer"></div>
+        <div id="main-text">
+          <h4>Thanks for browsing!</h4>
+          <label>Designed + built with <3 and iced vanilla lattes</label>
+        </div>
+        <a href="#about-area">
+          <div id="to-top">
+              <p id="up-text">Back to top</p>
+              <img id="up" src="assets/solar_arrow-up-outline.png"/>
+          </div>
+        </a>
+      </div>
     </div>
+    <script>
+      const titleArea = document.getElementById("about-page");
+      const footerArea = document.getElementById("footer");
 
+      function spark(event){
+
+        let i = document.createElement("i");
+        i.style.left = (event.pageX) + "px";
+        i.style.top = (event.pageY) + "px";
+        i.style.scale = `${Math.random()*2+1}`;
+        i.style.setProperty('--random-color', getRandomColor());
+        i.style.setProperty(`--x`, getRandomTransitionVal());
+        i.style.setProperty(`--y`, getRandomTransitionVal());
+
+        document.body.appendChild(i);
+
+        setTimeout(() => {
+          document.body.removeChild(i);
+        }, 800)
+      }
+
+      function getRandomTransitionVal() {
+        return `${Math.random()*200-100}px`;
+      }
+
+      function getRandomColor() {
+        const red = Math.floor(Math.random() + 250); // Random integer between 0 and 255
+        const green = Math.floor(Math.random() + 120);
+        const blue = Math.floor(Math.random() * 200);
+        const color = `rgb(${red}, ${green}, ${blue})`;
+        return color;
+      }
+
+      titleArea.addEventListener("mousemove", spark);
+      footerArea.addEventListener("mousemove", spark);
+    </script>
   </body>
+  <script src="mouse.js"></script>
 </html>

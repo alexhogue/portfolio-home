@@ -4,22 +4,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Home</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="mouse.css" />
   </head>
   <body id="website">
-    <div id="nav-bar">
+    <header id="nav-bar" class="collapsed">
       <div id="nav-bar-text">
         <text class="nav-button"><a href="home.html">Alex(andra) Hogue</a></text>
-        <div id="nav-buttons">
-          <text class="nav-button"><a id="work-nav" href="#selected">Work</a></text>
-          <text class="nav-button"><a>Art</a></text>
-          <text class="nav-button"><a href="about.html">About</a></text>
-          <a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a>
+        <nav id="nav-buttons">
+          <ul id="main-menu">
+            <li><text class="nav-button"><a id="work-nav" href="#selected">Work</a></text></li>
+            <li><text class="nav-button"><a href="art.html">Art</a></text></li>
+            <li><text class="nav-button"><a href="about.html">About</a></text></li>
+            <li><a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a></li>
+          </ul>
+        </nav>
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><text class="nav-button"><a id="work-nav" href="#selected">Work</a></text></li>
+            <li><text class="nav-button"><a href="art.html">Art</a></text></li>
+            <li><text class="nav-button"><a href="about.html">About</a></text></li>
+            <li><a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a></li>
+          </ul>
         </div>
       </div>
       <hr>
-    </div>
+    </header>
     <div id="title-cont">
-      <div id="titleArea">
+      <div id="headingArea">
         
         
         <div id="star" >
@@ -36,20 +53,26 @@
           </text>
           <text id="title">Hello- I'm Alex(andra) Hogue</text>
         </svg> -->
-        <text id="title">Hello- I'm <span id="name">Alex(andra) Hogue</span>!</text>
+        
+        <text id="title">Hello- I'm <a href="about.html"><span id="name">Alex(andra) Hogue</span></a>!</text>
+      
         <div id="main-sec">
           <div id="sketch-cont">
             <img id="me-sketch" src="assets/me-sketch.png">
           </div>
+          <!-- <img id="cloud" src="assets/cloud.png"/> -->
           <div id="bio-cont">
-            <p>I’m a Designer at the intersection of visual communication, technology, and cognitive science 
-              focused on accessibility and inclusion. I work to make people and their needs seen!</p>
-            <a href="about.html">
-              <div id="more">
-                  <h4 id="aboutMe">More about me</h4>
-                  <img id="arrow" src="assets/arrow.png"/>
-              </div>
-            </a>
+            <h4 id="bio-text">I’m a Designer at the intersection of <span>visual communication</span>, technology, and cognitive science 
+              focused on accessibility and inclusion. I work to make people and their needs seen!</h4>
+            <div id="more">
+              <a href="about.html">
+                <div id="about-link">
+                <h4 id="about-me">More about me</h4>
+                <img id="arrow" src="assets/arrow.png"/>
+                </div>
+              </a>
+              <img id="plane" src="assets/paper-plane.png"/>
+            </div>
           </div>
         </div>
       </div>
@@ -64,7 +87,76 @@
     </div>
     <div>
       <hr>
-      <div class="work-cont">
+      <div id="work-section">
+        <div class="column">
+          <a href="warp.html">
+            <div class="work">
+              <div class="work-content">
+                <video loop autoplay muted id="warp-vid">
+                  <source src="assets/warp/highfi.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                  <div class="work-desc">
+                    <h1 class="number">1.</h1>
+                    <div>
+                      <h3 class="project-title">Warp Home</h3>
+                      <label>Product design | industry project | collaboration</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="work-cont">
+              <a href="voyage-vault.html">
+                <div class="work">
+                  <div class="work-content">
+                    <img id="voyage-gif" alt="user interacting with the interface" src="assets/interface.gif"/>
+                    <div class="work-desc">
+                      <h1 class="number">2.</h1>
+                      <div>
+                        <h3 class="project-title">Voyage Vault</h3>
+                        <!-- <p>A travel app prototype for creating your travel bucket list</p> -->
+                        <label>UI/UX design | front-end development</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <div class="column">
+          <a href="hack.html">
+            <div class="work">
+              <div class="work-content">
+                <video loop autoplay muted id="hack-vid">
+                  <source src="assets/hack-cropped.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="work-desc">
+                  <h1 class="number">3.</h1>
+                  <div>
+                    <h3 class="project-title">Hack@Brown</h3>
+                    <label>web design | brand identity | leadership</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="work">
+            <div class="work-content">
+              <div class="work-desc">
+                <h1 class="number">4.</h1>
+                <div>
+                  <h3 class="project-title">Visual Communication</h3>
+                  <label>illustration | graphic design</label>
+                </div>
+              </div>
+              <p>(coming soon)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="work-cont">
         <a href="warp.html">
           <div class="work">
             <h1 class="number">1.</h1>
@@ -72,9 +164,9 @@
               <video loop autoplay muted id="warp-vid">
                 <source src="assets/warp/highfi.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video>
+              </video> -->
               <!-- <img id="warp" src="assets/warp.png"/> -->
-              <div class="work-desc">
+              <!-- <div class="work-desc">
                 <h3 class="project-title">Warp Home</h3>
                 <label>Product design | industry project | collaboration</label>
               </div>
@@ -82,8 +174,8 @@
           </div>
         </a>
         <hr class="work-divider">
-      </div>
-        <div class="work-cont">
+      </div> -->
+        <!-- <div class="work-cont">
           <a href="voyage-vault.html">
             <div class="work">
               <h1 class="number">2.</h1>
@@ -105,51 +197,78 @@
           <h1 class="number">3.</h1>
           <div class="work-content">
             <div class="work-desc">
+              <h3 class="project-title">Hack@Brown</h3>
             </div>
           </div>
         </div>
+        <hr class="work-divider">
       </div>
-      <!-- <hr class="work-divider"> -->
+      <div class="work-cont">
+        <div class="work">
+          <h1 class="number">4.</h1>
+          <div class="work-content">
+            <div class="work-desc">
+              <h3 class="project-title">Visual Communication</h3>
+            </div>
+          </div>
+        </div>
+        <hr class="work-divider">
+      </div> -->
     </div>
     <div id="footer">
-      <p>Alexandra Hogue</p>
+      <hr>
+      <div id="footer-text">
+        <div id="spacer"></div>
+        <div id="main-text">
+          <h4>Thanks for browsing!</h4>
+          <label>Designed + built with <3 and iced vanilla lattes</label>
+        </div>
+        <a href="#title-cont">
+          <div id="to-top">
+              <p id="up-text">Back to top</p>
+              <img id="up" src="assets/solar_arrow-up-outline.png"/>
+          </div>
+        </a>
+      </div>
     </div>
     <script>
-      const titleArea = document.getElementById("title-cont");
+      // const titleArea = document.getElementById("title-cont");
+      // const footerArea = document.getElementById("footer");
 
-      function spark(event){
+      // function spark(event){
 
-        let i = document.createElement("i");
-        i.style.left = (event.pageX) + "px";
-        i.style.top = (event.pageY) + "px";
-        i.style.scale = `${Math.random()*2+1}`;
-        i.style.setProperty('--random-color', getRandomColor());
-        i.style.setProperty(`--x`, getRandomTransitionVal());
-        i.style.setProperty(`--y`, getRandomTransitionVal());
+      //   let i = document.createElement("i");
+      //   i.style.left = (event.pageX) + "px";
+      //   i.style.top = (event.pageY) + "px";
+      //   i.style.scale = `${Math.random()*2+1}`;
+      //   i.style.setProperty('--random-color', getRandomColor());
+      //   i.style.setProperty(`--x`, getRandomTransitionVal());
+      //   i.style.setProperty(`--y`, getRandomTransitionVal());
 
-        document.body.appendChild(i);
+      //   document.body.appendChild(i);
 
-        setTimeout(() => {
-          document.body.removeChild(i);
-        }, 800)
-      }
+      //   setTimeout(() => {
+      //     document.body.removeChild(i);
+      //   }, 800)
+      // }
 
-      function getRandomTransitionVal() {
-        return `${Math.random()*200-100}px`;
-      }
+      // function getRandomTransitionVal() {
+      //   return `${Math.random()*200-100}px`;
+      // }
 
-      function getRandomColor() {
-        const red = Math.floor(Math.random() + 250); // Random integer between 0 and 255
-        const green = Math.floor(Math.random() + 120);
-        const blue = Math.floor(Math.random() * 200);
-        const color = `rgb(${red}, ${green}, ${blue})`;
-        return color;
-      }
+      // function getRandomColor() {
+      //   const red = Math.floor(Math.random() + 250); // Random integer between 0 and 255
+      //   const green = Math.floor(Math.random() + 120);
+      //   const blue = Math.floor(Math.random() * 200);
+      //   const color = `rgb(${red}, ${green}, ${blue})`;
+      //   return color;
+      // }
 
-      titleArea.addEventListener("mousemove", spark);
+      // titleArea.addEventListener("mousemove", spark);
+      // footerArea.addEventListener("mousemove", spark);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
+  <script src="mouse.js"></script>
 </html>

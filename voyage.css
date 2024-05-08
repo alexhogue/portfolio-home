@@ -90,9 +90,6 @@ table {
   margin-bottom: 5%;
   margin-top: 2%;
 }
-ul {
-  width: 60%;
-}
 
 .section {
   margin-left: 15%;
@@ -103,14 +100,14 @@ ul {
   margin-top: 6%;
 }
 #titleArea{
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 4%;
   /* margin-bottom: 8%; */
 }
 #overviewContent{
   display: flex;
-  gap: 5%;
+  gap: 10%;
 }
 #tools{
   min-width: 200px;
@@ -130,16 +127,24 @@ ul {
 #planning{
   width: 85%;
 }
+#plan-list{
+    width:80%;
+}
 #planning-sec{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 5%;
 }
+.x{
+    width: 20px;
+    height: fit-content;
+}
 #initial-img{
   width: 60%;
   height: fit-content;
   min-width: 250px;
+  border-radius: 15px;
   border: 2px solid rgb(239, 239, 239);
 }
 #initial-writing-sec{
@@ -167,6 +172,10 @@ ul {
 #imageWriting{
   min-width: 250px;
 }
+#purposeWriting{
+    width: 85%;
+    min-width: 300px;
+}
 #plane{
   width:30%;
 }
@@ -186,18 +195,9 @@ ul {
   gap: 5%;
 }
 #gif{
-  width:60%
-}
-a:link{
-  color: inherit;
-  text-decoration: none;
-}
-a {
-    color: inherit;
-}
-a:hover{
-  color: #E7436D;
-  text-decoration: underline;
+  width:60%;
+  border-radius: 15px;
+  border: 2px solid rgb(239, 239, 239);
 }
 #competitiveAnalysis{
   padding: 6%;
@@ -209,4 +209,7 @@ a:hover{
   margin-right: 15%;
   margin-top: 4%;
   min-width: 325px;
+}
+#takeaways{
+    width: 80%;
 }
