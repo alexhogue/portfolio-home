@@ -295,6 +295,15 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  #titleArea{
+    padding-top: 25px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .section, #conclusion{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
   #overviewContent{
     flex-direction: column;
   }

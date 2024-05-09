@@ -13,7 +13,7 @@
 }
 
 #nav-bar.expanded {
-  height: 30vh; /* Adjust this value to the desired height when the menu is open */
+  height: 275px; /* Adjust this value to the desired height when the menu is open */
   border-bottom: 1px solid black;
 }
 #nav-bar-text{
