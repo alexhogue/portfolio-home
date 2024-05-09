@@ -175,8 +175,18 @@ i {
  #main-sec{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
  }
  #me{
-    min-width: 225px;
+    min-width: 275px;
  }
+ #about-area{
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 8%;
+ }
+ .section {
+  margin-left: 4%;
+  margin-right: 4%;
+}
 }

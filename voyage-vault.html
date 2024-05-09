@@ -9,18 +9,31 @@
     <link rel="stylesheet" href="footer.css" /> 
   </head>
   <body>
-    <div id="nav-bar">
+    <header id="nav-bar" class="collapsed">
       <div id="nav-bar-text">
         <text class="nav-button"><a href="index.html">Alex(andra) Hogue</a></text>
-        <div id="nav-buttons">
-          <text class="nav-button"><a id="work-nav" href="index.html#selected">Work</a></text>
-          <text class="nav-button"><a href="art.html">Art</a></text>
-          <text class="nav-button"><a href="about.html">About</a></text>
-          <a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a>
+        <nav id="nav-buttons">
+          <ul id="main-menu">
+            <li><text class="nav-button"><a id="work-nav" href="index.html#selected">Work</a></text></li>
+            <li><text class="nav-button"><a href="art.html">Art</a></text></li>
+            <li><text class="nav-button"><a href="about.html">About</a></text></li>
+            <li><a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a></li>
+          </ul>
+        </nav>
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><text class="nav-button"><a id="work-nav" href="index.html#selected">Work</a></text></li>
+            <li><text class="nav-button"><a href="art.html">Art</a></text></li>
+            <li><text class="nav-button"><a href="about.html">About</a></text></li>
+            <li><a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png"/></a></li>
+          </ul>
         </div>
       </div>
       <hr>
-    </div>
+    </header>
     <div id="titleArea">
         <h1>Voyage Vault</h1>
         <h4>Create your dream travel bucket list!</h4>
@@ -163,19 +176,19 @@
           <h3>Design Choices</h3>
           <img id="pageAnalysis" src="assets/voyage/page_analysis.png"/>
           <div id="purposeWriting">
-            <div id="choices">
+            <div class="choices">
             <h4><b>Layout</b></h4>
             <p>The purpose of the app is to provide users with travel destination ideas and allow them to build their travel bucket 
               list and view other users opinions and rankings. It is important that the travel information for each destination be
               clearly layed out into item cards for users to easily browse.</p>
             </div>
-            <div id="choices">
+            <div class="choices">
               <h4><b>Sort and Filter</b></h4>
               <p>Because travel is incredibly distinct to each individual's 
               preferences, sorting and filtering the options is extremely useful. I created the options for users to sort by most liked destinations 
               and filter destinations by both continent as well as desired activity (e.g city, beach, and adventure focused destinations).</p>
             </div>
-            <div id="choices">
+            <div class="choices">
               <h4><b>Aggregator</b></h4>
               <p>The user is then able to add their favorite destinations to their travel vault. The vault is the aggregator that displays the users choices 
               in a section to the left of the travel grid so that users can easily view and update their list as they browse.</p>
@@ -243,5 +256,6 @@
         </a>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
   </html>

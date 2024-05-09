@@ -120,7 +120,7 @@ table {
   display:flex;
   gap: 5%;
 }
-#choices {
+.choices {
   display: flex;
   gap: 5%;
 }
@@ -196,6 +196,7 @@ table {
 }
 #gif{
   width:60%;
+  height: fit-content;
   border-radius: 15px;
   border: 2px solid rgb(239, 239, 239);
 }
@@ -212,4 +213,45 @@ table {
 }
 #takeaways{
     width: 80%;
+}
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 65px;
+  }
+  .section, #conclusion, #titleArea{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  #overviewContent{
+    flex-direction: column;
+  }
+  #plan-list{
+    width:100%;
+  }
+  .choices{
+    flex-direction: column;
+  }
+  #gif{
+    width: 100%;
+  }
+  #implementationSec{
+    flex-direction: column;
+  }
+  #competitiveAnalysis{
+    padding: 0%;
+  }
+  td {
+    font-size: 14px;
+  }
+  #takeaways{
+    width: 100%;
+  } 
+  #imageExamples{
+    flex-direction: column;
+    gap:15px
+  }
+
+ 
 }

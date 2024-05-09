@@ -259,6 +259,10 @@ video {
 
 
 @media screen and (max-width: 768px) {
+  .section, #reflection, #titleArea{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
   #overview-section{
     flex-direction: column;
   }

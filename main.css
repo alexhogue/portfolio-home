@@ -30,6 +30,8 @@
 #website {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: -10px;
   /* background-color: rgb(247, 244, 242); */
 }
@@ -196,6 +198,7 @@ a{
 }
 .work{
   /* width: 60%; */
+  display: flex;
   border-radius: 15px;
   padding: 20px;
   transition: transform .2s;
@@ -298,12 +301,16 @@ a{
   }
   #title{
     font-size: 36px;
+    margin-top: 25px;
   }
   #main-sec{
     flex-direction: column;
   }
   #work-section{
     flex-direction: column;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
   }
   .work-content{
     flex-direction: column;
@@ -312,4 +319,5 @@ a{
     margin-left:10px;
     justify-content: center;
   }
+
 }
