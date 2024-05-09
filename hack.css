@@ -203,11 +203,11 @@ table {
 }
 #sketch1, #sketch2, #sketch3{
     width: 40%;
-    height:fit-content
+    height:fit-content;
 }
 #sketch1, #sketch3{
     width: 100%;
-    height:fit-content
+    height:fit-content;
 }
 #sketch-col{
     display:flex;
@@ -322,9 +322,11 @@ table {
   #style-guide{
     width: 100%;
   }
-
   #count-sec{
     width: 85%;
+  }
+  #sketch1, #sketch2, #sketch3, .asset, #alien, #star, #moon-bear{
+    height: auto;
   }
 
   

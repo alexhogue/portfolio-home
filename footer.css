@@ -39,6 +39,7 @@
   }
   #up{
     width: 40px;
+    height: auto;
   }
   #footer-text{
     justify-content: space-between;

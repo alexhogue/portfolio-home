@@ -269,6 +269,9 @@ video {
   #sketches{
     flex-direction: column;
   }
+  #warp-icon, .button{
+      height: auto;
+  }
   #carousel{
     width: 315px;
   }

@@ -252,6 +252,9 @@ table {
     flex-direction: column;
     gap:15px
   }
+  .x, #initial-img{
+    height: auto;
+  }
 
  
 }
