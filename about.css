@@ -148,7 +148,7 @@ hr{
 }
 .picture{
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 i {
   position: absolute;
