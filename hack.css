@@ -325,7 +325,7 @@ table {
   #count-sec{
     width: 85%;
   }
-  #sketch1, #sketch2, #sketch3, .asset, #alien, #star, #moon-bear{
+  #sketch1, #sketch2, #sketch3, .asset, #alien, .star, #moon-bear{
     height: auto;
   }
 
