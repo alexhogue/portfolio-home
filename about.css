@@ -30,6 +30,8 @@
 #website {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 html, body{
   scroll-behavior: smooth;
@@ -70,7 +72,7 @@ li,
 th, button {
   font-size: 18px;
   font-family: "BasisGrotesk";
-  line-height: 30px;
+  line-height: 32px;
 }
 hr{
   margin-top: 0em;

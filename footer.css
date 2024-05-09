@@ -53,3 +53,8 @@
     margin-right: 8%;
   }
 }
+@media screen and (min-width: 768px) {
+  #footer{
+    width: 85%;
+  }
+}
