@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "BasisGrotesk";
+  src: url("typefaces/BasisGrotesquePro-Light 2.otf");
+}
+@font-face {
+  font-family: "GT";
+  src: url("typefaces/GT-Walsheim-Pro-Light.otf");
+}
+@font-face {
+  font-family: "GT-med";
+  src: url("typefaces/GT-Walsheim-Pro-Medium.otf");
+}
+@font-face {
+  font-family: "MonumentGrotesk";
+  src: url("typefaces/monument-grotesk-regular.otf");
+}
+@font-face {
+  font-family: "GoodSans";
+  src: url("typefaces/GoodSans-Thin.otf");
+}
+@font-face {
+  font-family: "Plaak";
+  src: url("typefaces/Plaak-25Light.otf");
+}
+
+#website {
+  display: flex;
+  flex-direction: column;
+}
+.centered-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 44px;
+  font-family: "GT-med";
+}
+h2 {
+  font-size: 28px;
+  font-family: "GT-med";
+  color: #505050;
+}
+h3 {
+  font-size: 22px;
+  font-family: "Plaak";
+  min-width: 150px;
+  color: #474747;
+}
+h4 {
+  font-size: 20px;
+  font-family: "GT";
+  font-weight: bolder;
+  /* min-width: 150px; */
+  /* color: #474747; */
+}
+h5 {
+  font-size: 20px;
+  font-family: "MonumentGrotesk";
+}
+p,
+li,
+th {
+  font-size: 18px;
+  font-family: "BasisGrotesk";
+  line-height: 32px;
+}
+label{
+  font-size: 14px;
+  font-family: "BasisGrotesk";
+  line-height: 24px;
+}
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#titleArea {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  margin-bottom: -20px;
+}
+#web-content{
+    display: flex;
+    width: 100%;
+}
+.proj-link{
+  color: inherit;
+  text-decoration: none;
+  /* border-bottom: 1px dotted #6f6a6a; */
+  color: #474747;
+}
+.proj-link:hover{
+  color: #909090;
+  font-weight: 800;
+}
+#sidebar {
+  height: auto;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 42%;
+  margin-left: 14%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: top 0.3s ease;
+}
+#sidebar a {
+  padding: 0px 0px 15px 16px;
+  text-decoration: none;
+  display: block;
+}
+#main-sec{
+    width: 80%;
+    margin-left: 18%;
+}
+
+.section {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 4%;
+}
+#petra-project{
+  padding-top: 40px;
+  margin-top: -20px;
+}
+#audubon-poster, #medical-illustration, #patient-ill{
+  padding-top: 40px;
+  /* margin-top: -40px; */
+}
+.h3-section {
+  margin-top: 6%;
+}
+
+.overview-section{
+  display: flex;
+  gap: 10%;
+}
+#tools{
+  width: 25%;
+  min-width: 230px;
+}
+#petra-img, #audubon-img{
+    width: 100%;
+    height:auto;
+    border: 2px solid rgb(239, 239, 239);
+}
+#sketches{
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-container {
+  width: 100%;
+  height: 100%; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+#carousel{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.carousel-item, .carousel-item2 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.carousel-item img, .carousel-item2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.button {
+  width:20px;
+  height: fit-content;
+  opacity: 80%;
+}
+.button:hover {
+  width:20px;
+  height: fit-content;
+  opacity: 55%;
+}
+.petra-sketch{
+  width: 45%;
+  height: auto;
+}
+.all-about-img{
+  width: 33%;
+  height: auto;
+}

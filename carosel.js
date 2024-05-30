@@ -28,3 +28,35 @@ showSlide(currentIndex);
 // Set up event listeners for next and previous buttons
 document.getElementById("nextBtn").addEventListener("click", nextSlide);
 document.getElementById("prevBtn").addEventListener("click", previousSlide);
+
+
+const carouselItems2 = document.querySelectorAll(".carousel-item2");
+let currentIndex2 = 0;
+
+function showSlide2(index) {
+  // Hide all carousel items
+  carouselItems2.forEach((item) => {
+    item.style.display = "none";
+  });
+
+  // Show the slide at the specified index
+  carouselItems2[index].style.display = "block";
+}
+
+function nextSlide2() {
+  currentIndex2 = (currentIndex2 + 1) % carouselItems2.length;
+  showSlide2(currentIndex2);
+}
+
+function previousSlide2() {
+  currentIndex2 =
+    (currentIndex2 - 1 + carouselItems2.length) % carouselItems2.length;
+  showSlide2(currentIndex2);
+}
+
+// Show the first slide initially
+showSlide2(currentIndex2);
+
+// Set up event listeners for next and previous buttons
+document.getElementById("nextBtn2").addEventListener("click", nextSlide2);
+document.getElementById("prevBtn2").addEventListener("click", previousSlide2);

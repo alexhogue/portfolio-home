@@ -29,6 +29,7 @@ th, button {
 #titleArea{
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 8%;
+  margin-top: 8%-40px;
+  padding-top: 40px;
   
 }

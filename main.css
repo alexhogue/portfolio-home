@@ -256,7 +256,8 @@ a{
 /* #plane:hover{
   transform: scale(1.05);
 } */
-#voyage-gif{
+
+#voyage-gif, #vis-img{
   width: 93%;
   height: fit-content;
   padding: 15px;

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Communication Page</title>
+    <link rel="stylesheet" href="vis-comm.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body id="website">
+    <header id="nav-bar" class="collapsed">
+      <div id="nav-bar-text">
+        <text class="nav-button"><a href="index.html">Alex(andra) Hogue</a></text>
+        <nav id="nav-buttons">
+          <ul id="main-menu">
+            <li><text class="nav-button"><a id="work-nav" href="index.html#selected">Work</a></text></li>
+            <li><text class="nav-button"><a href="art.html">Art</a></text></li>
+            <li><text class="nav-button"><a href="about.html">About</a></text></li>
+            <li><a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png" alt="visit Alex's LinkedIn profile"/></a></li>
+          </ul>
+        </nav>
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><text class="nav-button"><a id="work-nav" href="index.html#selected">Work</a></text></li>
+            <li><text class="nav-button"><a href="art.html">Art</a></text></li>
+            <li><text class="nav-button"><a href="about.html">About</a></text></li>
+            <li><a href="https://www.linkedin.com/in/alex-hogue/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.png" alt="visit Alex's LinkedIn profile"/></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </header>
+
+    <div id="titleArea">
+        <h1>Visual Communication</h1>
+        <h4>Projects focusing on clear communication of complex concepts to a particular audience</h4>
+    </div>
+    <div class="section">
+        <hr>
+    </div>
+    <div id="web-content">
+        <div id="sidebar">
+            <a class="proj-link" href="#petra-project"><h4>Petra Project</h4></a>
+            <a class="proj-link" href="#medical-illustration"><h4>Medical Illustration</h4></a>
+            <a class="proj-link" href="#audubon-poster"><h4>Audubon Poster</h4></a>
+            <a class="proj-link" href="#patient-ill"><h4>Patient Education Posters</h4></a>
+        </div>
+    <div id="main-sec">
+        <div id="content-sec">
+        <div class="section" id="petra-project">
+            <h2>Petra Project</h2>
+            <div class="overview-section">
+                <div id="overview">
+                    <p>
+                        This project was created in collaboration with Professor of Archaeology Felipe Rojas from Brown University 
+                        and Professor of Anthropology Sarah Newman at the University of Chicago based on their current archeological 
+                        research in Petra, Jordan. I worked with one partner to brainstorm and illustrate this piece which will be 
+                        used for the professors educational and research purposes.
+                    </p>
+                    <h3>Project Brief</h3>
+                    <p>
+                        The visual that the researchers needed for this site would show that the various features of the system are interconnected by a complex 
+                        water system and other elements, such as cisterns, baetyls, and a sluice. The target illustrations should be a combination of plans and sections and 
+                        perspectival drawings in order to convey the system and the scale of the cliff.
+                    </p>
+                </div>
+                <div id="tools">
+                    <h5 class="overview-text">Project Focus:</h5>
+                    <p>UI/UX design, product design, collaboration</p>
+                    <h5 class="overview-text">Tools:</h5>
+                    <p>Adobe Photoshop, Illustrator, Procreate</p>
+                </div>
+            </div>
+            <br>
+            <div id="sketch-sec">
+                <h3>Initial Sketching</h3>
+                <p>Below are some early sketches where I am brainstorming the best way to organize the layout of the system in order to
+                    demonstrate the complex interaction of water with the cliffs and other elements. 
+                </p>
+                <div id="sketches">
+                    <img class="petra-sketch" src="assets/visualComm/petra-sketch1.jpeg">
+                    <img class="petra-sketch" src="assets/visualComm/petra-sketch2.jpg">
+                </div>
+            </div>
+            <h3 class="h3-section">Final Graphic</h3>
+            <p>Based on feedback received from the researchers, my parter and I created this final peice demonstrating 
+                the various elements of the system, the height of the cliffs, and the interconnected water network.
+            </p>
+            <img id="petra-img" src="assets/visualComm/petra-project.png"/>
+        </div>
+
+        <div class="section">
+            <hr>
+        </div>
+        
+        <div class="section" id="medical-illustration">
+            <h2>Medical Illustration</h2>
+            <div class="overview-section">
+                <div id="overview">
+                    <p>In the carousel below are illustrations with a focus on medical communication from my internship and 
+                        various courses.
+                    </p>
+                    <p>
+                        During my internship with UNC Chapel Hill in the Department of Neurosurgery in summer of 2023, 
+                        I created a variety of works focused on clearly illustrating medical concepts for surgeon and resident
+                        research.
+                    </p>
+                </div>
+                <div id="tools">
+                    <h5 class="overview-text">Project Focus:</h5>
+                    <p>Medical Illustration</p>
+                    <!-- <h5 class="overview-text">Tools:</h5>
+                    <p>Adobe Photoshop, Illustrator, Procreate</p> -->
+                </div>
+            </div>  
+            <div id="carousel">
+                <img id="prevBtn" class="button" src="assets/prev.png" alt="view previous sketch"/>
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="assets/visualComm/laparoscopic cholecystectomy.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/visualComm/kyphosis-graphic.png" alt="" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/visualComm/dissection-illustration.PNG" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/visualComm/bone-final.jpg" alt="">
+                    </div>
+                </div>
+                <img id="nextBtn" class="button" src="assets/next.png" alt="view next sketch"/>
+            </div>
+        </div>
+
+        <div class="section">
+            <hr>
+        </div>
+
+        <div class="section" id="audubon-poster">
+            <h2>Audubon Society Poster</h2>
+            <div class="overview-section">
+                <div id="overview">
+                    <p>
+                        For this project, I created an educational poster for the <a class="link" href="https://asri.org/" target="_blank">Audubon Society of Rhode Island</a> focusing 
+                        on the importance of salt marshes. This poster will be used in the Audubon Society's educational programming.
+                    </p>
+                </div>
+                <div id="tools">
+                    <h5 class="overview-text">Project Focus:</h5>
+                    <p>Visual Communication, Layout, Education</p>
+                    <!-- <h5 class="overview-text">Tools:</h5>
+                    <p>Adobe Photoshop, Illustrator, Procreate</p> -->
+                </div>
+            </div>
+            <img id="audubon-img" src="assets/visualComm/final-audubon-poster.png"/>
+        </div>
+
+        <div class="section">
+            <hr>
+        </div>
+
+        <div class="section" id="patient-ill">
+            <h2>Illustration for Patient Education</h2>
+            <div class="overview-section">
+                <div id="overview">
+                    <p>
+                        Below are some illustrative posters I created with a focus on visual communication of various conditions 
+                        intended for children.
+                    </p>
+                </div>
+                <div id="tools">
+                    <h5 class="overview-text">Project Focus:</h5>
+                    <p>Illustration, Child Education</p>
+                    <!-- <h5 class="overview-text">Tools:</h5>
+                    <p>Adobe Photoshop, Illustrator, Procreate</p> -->
+                </div>
+            </div>
+            <div id="image-sec">
+                <img class="all-about-img" src="assets/visualComm/All_About_Asthma.png"/>
+                <img class="all-about-img" src="assets/visualComm/All_About_Eczema.png"/>
+                <img class="all-about-img" src="assets/visualComm/All_About_Migraines.png"/>
+            </div>
+        </div>
+
+        <div class="section">
+            <hr>
+        </div>
+
+        <div id="reflection" class="section">
+            <h2>Reflections</h2>
+            <div id="conc-writing">
+                <p>These projects challenged me to think and plan strategically to accurately and effectively communicate 
+                    information to a particular audience. The projects require deep and thoughtful research in order to understand the topic 
+                    at hand and best capture the information needed. I hope to continue refining my visual commmunication skills
+                    by working on my understanding of graphic design and learning how to combine these types of projects with 
+                    new technology and UI/UX.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+        <div class="centered-sec">
+            <div id="footer">
+                <hr>
+                <div id="footer-text">
+                <div id="spacer"></div>
+                <div id="main-text">
+                    <h4>Thanks for browsing!</h4>
+                    <label>Designed + built with <3 and iced vanilla lattes</label>
+                </div>
+                <a href="#titleArea">
+                    <div id="to-top">
+                        <p id="up-text">Back to top</p>
+                        <img id="up" src="assets/solar_arrow-up-outline.png" alt="return to top of page"/>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    <script>
+        // JavaScript to adjust sidebar position on scroll
+        window.addEventListener('scroll', function() {
+            var sidebar = document.getElementById('sidebar');
+            if (window.scrollY > 100) { // You can adjust the scroll position as needed
+                sidebar.style.top = '22%';
+            } else {
+                sidebar.style.top = '42%';
+            }
+        });
+    </script>
+    <script src="carosel.js"></script>
+    <script src="mouse.js"></script>
+  </body>
+</html>
