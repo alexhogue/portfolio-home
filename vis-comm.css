@@ -124,9 +124,11 @@ li:not(:last-child) {
 #petra-project{
   padding-top: 40px;
   margin-top: -20px;
+  margin-bottom: 30px;
 }
 #audubon-poster, #medical-illustration, #patient-ill{
   padding-top: 40px;
+  margin-bottom: 30px;
   /* margin-top: -40px; */
 }
 .h3-section {
@@ -177,8 +179,6 @@ li:not(:last-child) {
   opacity: 80%;
 }
 .button:hover {
-  width:20px;
-  height: fit-content;
   opacity: 55%;
 }
 .petra-sketch{
@@ -198,13 +198,13 @@ li:not(:last-child) {
   }
   .section, #conclusion{
     margin-left: 8%;
-    margin-right: 8%;
+    margin-right: 2%;
   }
   .overview-section{
     flex-direction: column;
   }
   .proj-nav-title{
-    font-size: 12px;
+    font-size: 11px;
   }
   #sidebar {
     height: auto;
