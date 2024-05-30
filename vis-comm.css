@@ -173,7 +173,7 @@ li:not(:last-child) {
 }
 .button {
   width:20px;
-  height: fit-content;
+  height: auto;
   opacity: 80%;
 }
 .button:hover {
@@ -188,4 +188,34 @@ li:not(:last-child) {
 .all-about-img{
   width: 33%;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #titleArea{
+    padding-top: 25px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .section, #conclusion{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .overview-section{
+    flex-direction: column;
+  }
+  .proj-nav-title{
+    font-size: 12px;
+  }
+  #sidebar {
+    height: auto;
+    width: 18.5%;
+    position: fixed;
+    z-index: 1;
+    top: 42%;
+    margin-left: 1.5%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: top 0.3s ease;
+  }
+
 }
