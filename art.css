@@ -152,5 +152,6 @@ text {
         max-width: 325px;
         width: 100%;
         height: fit-content;
+        max-height: 400px;
     }
 }
