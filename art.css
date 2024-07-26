@@ -149,5 +149,7 @@ text {
 @media(max-width:768px){
     #photos{
         flex-direction: column;
+        max-width: 325px;
+        width: 100%;
     }
 }
