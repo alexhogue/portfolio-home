@@ -150,8 +150,10 @@ text {
     #photos{
         flex-direction: column;
         max-width: 325px;
-        /* width: 100%; */
-        /* height: fit-content; */
-        max-height: 400px;
+    }
+    .photo{
+      width: 100%;
+      height: fit-content;
+      max-height: 400px;
     }
 }
