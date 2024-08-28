@@ -68,14 +68,15 @@
 
 @media(max-width:768px){
     #photos{
-        flex-direction: column;
-        max-width: 325px;
+      flex-direction: column;
+      max-width: 325px;
     }
     .column{
-        min-width: 300px;
+      max-width: 300px;
     }
     .photo{
       width: 100%;
+      max-width: 300px;
       width: fit-content;
       height: fit-content;
       /* max-height: 400px; */
