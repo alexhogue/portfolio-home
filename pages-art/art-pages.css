@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "BasisGrotesk";
+  src: url("../typefaces/BasisGrotesquePro-Light 2.otf");
+}
+@font-face {
+  font-family: "GT";
+  src: url("../typefaces/GT-Walsheim-Pro-Light.otf");
+}
+@font-face {
+  font-family: "GT-reg";
+  src: url("../typefaces/GT-Walsheim-Pro-Regular.otf");
+}
+@font-face {
+  font-family: "GT-med";
+  src: url("../typefaces/GT-Walsheim-Pro-Medium.otf");
+}
+@font-face {
+  font-family: "MonumentGrotesk";
+  src: url("../typefaces/monument-grotesk-regular.otf");
+}
+@font-face {
+  font-family: "GoodSans";
+  src: url("../typefaces/GoodSans-Thin.otf");
+}
+@font-face {
+  font-family: "Plaak";
+  src: url("../typefaces/Plaak-25Light.otf");
+}
+#website {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#titleArea {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 6%;
+  margin-bottom: -40px;
+}
+#art-sec {
+  width:90%;
+  margin:auto;
+  padding:40px 0;
+  margin-bottom: 4%;
+}
+#photos {
+  display: flex;
+  margin-top: 4%;
+  gap:10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    min-width: 365px;
+}
+.photo {
+    width:100%;
+    height: fit-content;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: filter 1s;
+}
+.photo:hover:not(:active){
+    filter: drop-shadow(0 0 4px rgb(146, 146, 146));
+}
+
+@media(max-width:768px){
+    #photos{
+        flex-direction: column;
+        max-width: 325px;
+    }
+    .column{
+        min-width: 300px;
+    }
+    .photo{
+      width: 100%;
+      width: fit-content;
+      height: fit-content;
+      /* max-height: 400px; */
+    }
+}

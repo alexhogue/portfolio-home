@@ -13,6 +13,40 @@ th, button {
   font-family: "BasisGrotesk";
   line-height: 30px;
 }
+h1 {
+  font-size: 44px;
+  font-family: "GT";
+}
+h2 {
+  font-size: 20px;
+  font-family: "GoodSans";
+  color: #474747;
+}
+h3 {
+  font-size: 28px;
+  font-family: "GT-med";
+  min-width: 150px;
+  color: #1e1e1e;
+}
+h4 {
+  font-size: 18px;
+  font-family: "BasisGrotesk";
+  min-width: 150px;
+  color: #474747;
+}
+h5 {
+  font-size: 20px;
+  font-family: "MonumentGrotesk";
+}
+label, button{
+  font-size: 14px;
+  font-family: "BasisGrotesk";
+  line-height: 24px;
+}
+hr{
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
 .important {
     font-family: "GT-reg";
     font-weight: bold;
@@ -26,10 +60,10 @@ th, button {
   color: #e7436d;
   /* text-decoration: underline; */
 }
-#titleArea{
+/* #titleArea{
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 8%-40px;
   padding-top: 40px;
   
-}
+} */
