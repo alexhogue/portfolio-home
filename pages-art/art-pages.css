@@ -67,12 +67,16 @@
 }
 
 @media(max-width:768px){
+    #titleArea{
+      margin-top: 50px;
+    }
     #photos{
       flex-direction: column;
-      /* max-width: 325px; */
+      align-items: center;
+      justify-content: center;
     }
     .column{
-      width: 100%;
+      width: 95%;
     }
     .photo{
       width: 100%;
