@@ -69,15 +69,15 @@
 @media(max-width:768px){
     #photos{
       flex-direction: column;
-      max-width: 325px;
+      /* max-width: 325px; */
     }
     .column{
       /* max-width: 300px; */
     }
     .photo{
-      /* width: 100%; */
+      width: 100%;
       max-width: 300px;
-      height: fit-content;
+      /* height: fit-content; */
       /* max-height: 400px; */
     }
 }
