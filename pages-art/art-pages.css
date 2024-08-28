@@ -57,7 +57,7 @@
 }
 .photo {
     width:100%;
-    height: fit-content;
+    height: auto;
     border-radius: 5px;
     object-fit: cover;
     transition: filter 1s;
@@ -72,12 +72,12 @@
       /* max-width: 325px; */
     }
     .column{
-      /* max-width: 300px; */
+      width: 100%;
     }
     .photo{
       width: 100%;
-      max-width: 300px;
-      /* height: fit-content; */
+      max-width: 100%;
       max-height: 500px;
+      object-fit: contain;
     }
 }
