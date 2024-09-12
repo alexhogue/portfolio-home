@@ -1,8 +1,28 @@
 @font-face {
-  font-family: "GT-reg";
-  src: url("typefaces/GT-Walsheim-Pro-Regular.otf");
+  font-family: "BasisGrotesk";
+  src: url("typefaces/BasisGrotesquePro-Light 2.otf");
+}
+@font-face {
+  font-family: "GT";
+  src: url("typefaces/GT-Walsheim-Pro-Light.otf");
+}
+@font-face {
+  font-family: "GT-med";
+  src: url("typefaces/GT-Walsheim-Pro-Medium.otf");
+}
+@font-face {
+  font-family: "MonumentGrotesk";
+  src: url("typefaces/monument-grotesk-regular.otf");
+}
+@font-face {
+  font-family: "GoodSans";
+  src: url("typefaces/GoodSans-Thin.otf");
 }
 
+#website {
+  display: flex;
+  flex-direction: column;
+}
 html, body{
   scroll-behavior: smooth;
 }
@@ -48,8 +68,8 @@ hr{
   margin-bottom: 0em;
 }
 .important {
-    font-family: "GT-reg";
-    font-weight: bold;
+  font-family: "GT-med";
+  font-weight: bold;
 }
 .link {
   color: inherit;
@@ -67,3 +87,22 @@ hr{
   padding-top: 40px;
   
 } */
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    font-family: "GT";
+  }
+  h3 {
+    font-size: 24px;
+    font-family: "GT-med";
+    min-width: 150px;
+    color: #1e1e1e;
+  }
+  p,
+  li,
+  th, button {
+    font-size: 16px;
+    font-family: "BasisGrotesk";
+    line-height: 26px;
+  }
+}

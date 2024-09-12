@@ -1,28 +1,3 @@
-@font-face {
-  font-family: "BasisGrotesk";
-  src: url("typefaces/BasisGrotesquePro-Light 2.otf");
-}
-@font-face {
-  font-family: "GT";
-  src: url("typefaces/GT-Walsheim-Pro-Light.otf");
-}
-@font-face {
-  font-family: "GT-med";
-  src: url("typefaces/GT-Walsheim-Pro-Medium.otf");
-}
-@font-face {
-  font-family: "MonumentGrotesk";
-  src: url("typefaces/monument-grotesk-regular.otf");
-}
-@font-face {
-  font-family: "GoodSans";
-  src: url("typefaces/GoodSans-Thin.otf");
-}
-@font-face {
-  font-family: "Plaak";
-  src: url("typefaces/Plaak-25Light.otf");
-}
-
 #website {
   display: flex;
   flex-direction: column;
@@ -31,45 +6,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-h1 {
-  font-size: 44px;
-  font-family: "GT-med";
-}
-h2 {
-  font-size: 28px;
-  font-family: "GT-med";
-  color: #505050;
-}
-h3 {
-  font-size: 22px;
-  font-family: "Plaak";
-  min-width: 150px;
-  color: #474747;
-}
-h4 {
-  font-size: 20px;
-  font-family: "GT";
-  font-weight: bolder;
-  /* min-width: 150px; */
-  /* color: #474747; */
-}
-h5 {
-  font-size: 20px;
-  font-family: "MonumentGrotesk";
-}
-p,
-li,
-th {
-  font-size: 18px;
-  font-family: "BasisGrotesk";
-  line-height: 32px;
-}
-label{
-  font-size: 14px;
-  font-family: "BasisGrotesk";
-  line-height: 24px;
 }
 li:not(:last-child) {
   margin-bottom: 10px;
@@ -191,14 +127,21 @@ li:not(:last-child) {
 }
 
 @media screen and (max-width: 768px) {
+  #web-content{
+    flex-direction: column;
+  }
+  #main-sec{
+      width: 100%;
+      margin-left: 0%;
+  }
   #titleArea{
     padding-top: 25px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   .section, #conclusion{
-    margin-left: 8%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   .overview-section{
     flex-direction: column;
@@ -206,16 +149,24 @@ li:not(:last-child) {
   .proj-nav-title{
     font-size: 11px;
   }
+  #sketches{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .petra-sketch{
+    width: 90%;
+  }
   #sidebar {
-    height: auto;
-    width: 18.5%;
-    position: fixed;
-    z-index: 1;
-    top: 42%;
-    margin-left: 1.5%;
-    overflow-x: hidden;
-    padding-top: 20px;
-    transition: top 0.3s ease;
+    display: none;
+  }
+  #image-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-about-img{
+    width: 75%;
   }
 
 }

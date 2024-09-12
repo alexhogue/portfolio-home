@@ -306,12 +306,12 @@ table {
 @media screen and (max-width: 768px) {
   #titleArea{
     padding-top: 25px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   .section, #conclusion{
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   #overviewContent{
     flex-direction: column;
@@ -331,11 +331,11 @@ table {
   #style-guide{
     width: 100%;
   }
-  #count-sec{
-    width: 85%;
-  }
   #sketch1, #sketch2, #sketch3, .asset, #alien, .star, #moon-bear{
     height: auto;
+  }
+  #takeaway-list, #implementationSec, #count-sec{
+      width: 100%;
   }
 
   

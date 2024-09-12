@@ -1,31 +1,3 @@
-@font-face {
-  font-family: "BasisGrotesk";
-  src: url("../typefaces/BasisGrotesquePro-Light 2.otf");
-}
-@font-face {
-  font-family: "GT";
-  src: url("../typefaces/GT-Walsheim-Pro-Light.otf");
-}
-@font-face {
-  font-family: "GT-reg";
-  src: url("../typefaces/GT-Walsheim-Pro-Regular.otf");
-}
-@font-face {
-  font-family: "GT-med";
-  src: url("../typefaces/GT-Walsheim-Pro-Medium.otf");
-}
-@font-face {
-  font-family: "MonumentGrotesk";
-  src: url("../typefaces/monument-grotesk-regular.otf");
-}
-@font-face {
-  font-family: "GoodSans";
-  src: url("../typefaces/GoodSans-Thin.otf");
-}
-@font-face {
-  font-family: "Plaak";
-  src: url("../typefaces/Plaak-25Light.otf");
-}
 #website {
   display: flex;
   flex-direction: column;
